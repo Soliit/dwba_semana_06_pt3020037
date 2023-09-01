@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>dwba4-semana-03-PT3020037</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id='main'>
+      <section id="topo">
+        <div id="navbar-placeholder"></div>
+        <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              });
+        </script>
+      </section>
+    </section>
+  </body>
+</html>

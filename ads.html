@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>dwba4-semana-03-PT3020037</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id='main'>
+      <section id="topo">
+        <div id="navbar-placeholder"></div>
+        <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              });
+        </script>
+      </section>
+    </section>
+    <div class='image-container' />
+      <div class='image-ifsp'>
+        <img src="images/Logo.jpg" />
+      </div>
+      <div class='image-ifsp-complement'></div>
+    </div>  
+    <p><b>Tecnologia em Análise e Desenvolvimento de Sistemas</b></p>  
+    <br>
+    <p>Objetivo Geral:<p>
+    <p>O curso de Análise e Desenvolvimento de Sistemas do câmpus São Paulo Pirituba tem como objetivo capacitar o egresso a atuar na área de Tecnologia de Informação (TI) em atividades como análise, projeto, desenvolvimento, gerenciamento e implantação de sistemas de informação computacionais. Essa capacitação é pautada pela valorização da prática e competências técnicas, tanto em análise quanto em desenvolvimento, e pela atualização diante da realidade tecnológica, de modo que o profissional seja um mediador competente entre o desenvolvimento tecnológico e a sociedade em que se insere.</p>
+    <br><br>
+    &nbsp;&nbsp;<a href="https://www.facebook.com/ifsppirituba" title="IFSP Facebook"><img width="40" height="40" src="images/facebook.png" /></a>
+    <footer><p>&nbsp;&nbsp;&nbsp;SP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p></footer>
+  </body>
+</html>

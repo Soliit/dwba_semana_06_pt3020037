@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dwba4-semana-03-PT3020037</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id='main'>
+      <section id="topo">
+        <div id="navbar-placeholder"></div>
+        <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              });
+        </script>
+      </section>
+      <div class='image-container' />
+        <div class='image-ifsp'>
+          <img src="images/Logo.jpg" />
+        </div>
+        <div class='image-ifsp-complement'></div>
+      </div>
+      <h3 class='title'>Acontece no IFSP!</h3>
+      <div class='image-seja-raro'> 
+        <img src="images/SEJA_RARO.jpg" />
+      </div>
+      <div class='border-title'>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</div>
+      <br>
+      <h3 class='title'>Conheça os desafios da inovação</h3>
+      <div class='video-container'>
+        <iframe width="420" height="230" src="https://www.youtube.com/embed/5g5LQe3m8Po?si=T32fhHlIN6E3JsRF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <br><br>
+      &nbsp;&nbsp;<a href="https://www.facebook.com/ifsppirituba" title="IFSP Facebook"><img width="40" height="40" src="images/facebook.png" /></a>
+      <footer><p>&nbsp;&nbsp;&nbsp;SP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p></footer>
+    </section>
+  </body>
+</html>

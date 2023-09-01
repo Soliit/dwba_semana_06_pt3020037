@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>dwba4-semana-03-PT3020037</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+      function limparFormulario() {
+        document.getElementById("formulario").reset();
+      }
+    </script>
+  </head>
+  <body>
+    <section id='main'>
+      <section id="topo">
+        <div id="navbar-placeholder"></div>
+        <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              });
+        </script>
+      </section>
+      <div class='image-container' />
+        <div class='image-ifsp'>
+          <img src="images/Logo.jpg" />
+        </div>
+        <div class='image-ifsp-complement'></div>
+      </div>
+      <div class='form-container'>
+        <h1>Inscreva-se</h1
+        <form id='formulario'>
+          <fieldset>
+            <label>Evento</label>
+            <select>
+              <option>-- Selecione --</option>
+              <option>Voe sem asas</option>
+              <option>Festa junina</option>
+              <option>Semana da Tecnologia</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Informações de Acesso</legend>
+            <br>
+            <label>Usuário</label>
+            <input type='text' />
+            <br><br>
+            <label>Senha</label>
+            <input type='text' />
+            <br><br>
+            <label>Confirme a Senha</label>
+            <input type='text' />
+          </fieldset>
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+            <br>
+            <label>Nome Completo</label>
+            <input type='text' />
+            <br><br>
+            <label>E-mail</label>
+            <input class='block-inputs' type='email' />
+            <br>
+            <label>Celular (99) 99999-9999</label>
+            <input class='block-inputs' type='text' />
+            <br><br>
+            <fieldset>
+              <legend>Sexo</legend>
+              <label>Masculino</label>
+              <input type='radio' name='sexo' value='M' />
+              <label>Feminino</label>
+              <input type='radio' name='sexo' value='F' />
+            </fieldset>
+            <br>
+            <label>Data de Nascimento</label>
+            <input type='date' />
+            <br><br>
+            <label>Cor Favorita</label>
+            <input type='color' />
+            <br><br>
+            <label>Perfil no Github</label>
+            <input class='block-inputs' type='text' />
+          </fieldset>
+          <br>
+          <input class='button' type='submit' value='Inscrever-se'>
+          <input class='button' type='submit' value='Limpar' onclick="limparFormulario(); return false;">
+          <br><br>
+          &nbsp;&nbsp;<a href="https://www.facebook.com/ifsppirituba" title="IFSP Facebook"><img width="40" height="40" src="images/facebook.png" /></a>
+          <footer><p>&nbsp;&nbsp;&nbsp;SP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p></footer>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
